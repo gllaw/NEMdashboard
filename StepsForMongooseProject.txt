@@ -13,5 +13,6 @@
 	- get one animal.
 	- edit a specific animal.
 	- delete a specific animal. 
-6. Server listen.
+6. Star server by running "(sudo) mongod" in terminal. New terminal tab and run "mongo" to use database.
 7. Create a database. 
+8. In mongo terminal tab, run ctrl+c to shut down server.
