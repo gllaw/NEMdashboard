@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animal Dashboard Index</title>
+</head>
+<body>
+
+<script>
+function randomAdj(){
+	var arr = ["esteemed", "celebrated", "reknowned", "acclaimed", "revered", "well-regarded", "infamous", "prominent", "sagacious", "perspicacious", "discerning"];
+	return arr[Math.floor( Math.random()*arr.length )];
+}
+</script>
+
+	<h1>Animal Squad Members</h1>	
+	<ul>
+		<% for(var i=0; i<members.length; i++){ %>
+   		<li><%= members[i].name %>, a[n] <script>document.write(randomAdj());</script> <%= members[i].type %>.
+   			<a href="/<%= members[i]._id %>">Profile</a>
+   			<a href="/<%= members[i]._id %>/edit">Edit</a>
+   			<a href="/<%= members[i]._id %>/destroy">Delete</a>
+   		</li>
+		<% } %>
+	</ul>
+	<a href="/new">Join!</a>
+</body>
+</html>

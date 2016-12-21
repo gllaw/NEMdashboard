@@ -1,0 +1,17 @@
+1. npm install express ejs body-parser --save
+2. Server.js, require+use express, body-parser, path, mongoose.
+3. Views directory, index.ejs, new.ejs, edit.ejs, show.ejs
+4. Set up routes.
+	- index page (show all) with add link, edit link (for each), delete link (for each).
+	- add form.
+	- show (profile) page with edit link.
+	- edit form page.
+	- delete button.
+5. Set up database interaction:
+	- add an animal.
+	- get all animals.
+	- get one animal.
+	- edit a specific animal.
+	- delete a specific animal. 
+6. Server listen.
+7. Create a database. 

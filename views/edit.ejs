@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Form View</title>
+</head>
+<body>
+  <h1>Edit <%= member.name %>:</h1>
+  <form action="/<%= member.id %>" method='post'>
+    Name: <input type="text" name="name" value="<%= member.name %>">
+    Type: <input type="text" name="type" value="<%= member.type %>">
+    <input type="submit" value="Edit">
+  </form>
+  <a href="/">Main</a>
+</body>
+</html>
